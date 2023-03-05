@@ -29127,7 +29127,7 @@
 					i = document,
 					a = t("html"),
 					o = t("body"),
-					// s = ".w-webflow-badge",
+					s = ".w",
 					l = window.location,
 					h = /PhantomJS/i.test(navigator.userAgent),
 					c =
