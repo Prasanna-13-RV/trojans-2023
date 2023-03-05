@@ -65,9 +65,16 @@
 			href="https://assets.website-files.com/62380a41f823f569003b985b/6238424346d20462c3540a99_metarl-webclip.png"
 			rel="apple-touch-icon"
 		/>
+		<link rel="stylesheet" href="../load.css" />
 	</head>
 
 	<body>
+		<section id="loadSection">
+			<div class="loadDiv">
+				<img src="../assets/home/trojans.png" alt="" />
+				<h1>Loading ...</h1>
+			</div>
+		</section>
 		<div
 			data-w-id="1cf424b7-c625-1992-6aeb-140d4b8a7b1a"
 			data-animation="default"
@@ -595,5 +602,18 @@
 		<!--[if lte IE 9
 			]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
 		><![endif]-->
+		<script>
+			document.onreadystatechange = function () {
+				if (document.readyState !== "complete") {
+					document.querySelector("body").style.visibility = "hidden";
+					document.querySelector("#loadSection").style.visibility =
+						"visible";
+				} else {
+					document.querySelector("#loadSection").style.display =
+						"none";
+					document.querySelector("body").style.visibility = "visible";
+				}
+			};
+		</script>
 	</body>
 </html>
