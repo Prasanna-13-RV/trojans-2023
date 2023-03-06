@@ -7,12 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <title>Registration | Trojans</title>
-    <meta content="Meta — Webflow HTML5 Website Template" property="og:title" />
+    <meta content="Trojans - A National Level Symposium" property="og:title" />
     <meta
-      content="Meta — Webflow HTML5 Website Template"
+      content="Trojans - A National Level Symposium"
       property="twitter:title" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Webflow" name="generator" />
+    <meta property="og:image" content="../assets/home/Tro1.png" />
+    <meta content="Trojans" name="generator" />
+    <link
+      rel="shortcut icon"
+      href="../assets/home/trojans.png"
+      type="image/x-icon" />
     <!-- <link
 			href="https://assets.website-files.com/62380a41f823f569003b985b/css/metarl.webflow.74f2e9437.css"
 			rel="stylesheet"
@@ -24,7 +28,6 @@
 		></script> -->
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/index.js"></script>
-    <script src="../js/javascript.js"></script>
     <script type="text/javascript">
       WebFont.load({
         google: {
@@ -52,15 +55,18 @@
       })(window, document);
     </script>
     <link
-      href="https://assets.website-files.com/62380a41f823f569003b985b/62384240e1f64b5e39c59552_metarl-favicon.png"
-      rel="shortcut icon"
-      type="image/x-icon" />
-    <link
       href="https://assets.website-files.com/62380a41f823f569003b985b/6238424346d20462c3540a99_metarl-webclip.png"
       rel="apple-touch-icon" />
+    <link rel="stylesheet" href="../load.css" />
   </head>
 
   <body>
+    <section id="loadSection">
+      <div class="loadDiv">
+        <img src="../assets/home/trojans.png" alt="" />
+        <h1>Loading ...</h1>
+      </div>
+    </section>
     <div
       data-w-id="1cf424b7-c625-1992-6aeb-140d4b8a7b1a"
       data-animation="default"
@@ -88,48 +94,40 @@
                 >Technical</a
               ><a href="./nontechnical.html" class="nav-link w-nav-link"
                 >Non Technical</a
-              ><a href="./workshop.html" class="nav-link w-nav-link"
-                >Workshop</a
               >
+              <a href="./workshop.html" class="nav-link w-nav-link">Workshop</a>
               <a href="./gaming.html" class="nav-link w-nav-link">Gaming</a>
-              <a href="./register.html" class="nav-link w-nav-link"
+              <a href="./register.html" class="nav-link w-nav-link w--current"
                 >Registration</a
               >
             </div>
             <div class="social-links-wrap top-margin-12px-on-mobile">
               <a
-                href="https://twitter.com/"
-                target="_blank"
-                class="social-link w-inline-block"
-                ><img
-                  src="https://assets.website-files.com/62380a41f823f569003b985b/623811522e6e68b708f49b58_Twitter.png"
-                  loading="lazy"
-                  alt=""
-                  class="social-icon" /></a
-              ><a
-                href="https://discord.com/"
-                target="_blank"
-                class="social-link w-inline-block"
-                ><img
-                  src="https://assets.website-files.com/62380a41f823f569003b985b/62381152d5477ff6516a767b_Discord.png"
-                  loading="lazy"
-                  alt=""
-                  class="social-icon" /></a
-              ><a
-                href="http://youtube.com"
+                href="https://www.youtube.com/channel/UC5pM39xn_AYsaldF2DPpI3A"
                 target="_blank"
                 class="social-link w-inline-block"
                 ><img
                   src="https://assets.website-files.com/62380a41f823f569003b985b/62381152b6d9c863aa885bea_YouTube.png"
                   loading="lazy"
                   alt=""
-                  class="social-icon" /></a
-              ><a
-                href="https://telegram.org/"
+                  class="social-icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/trojans-cit-363404239/"
                 target="_blank"
                 class="social-link w-inline-block"
                 ><img
-                  src="https://assets.website-files.com/62380a41f823f569003b985b/62381152cad42d97dfbd3543_Telegram%20App.png"
+                  src="https://img.icons8.com/ios-glyphs/80/null/linkedin-circled--v1.png"
+                  loading="lazy"
+                  alt=""
+                  class="social-icon"
+              /></a>
+              <a
+                href="https://www.instagram.com/trojans_cit/"
+                target="_blank"
+                class="social-link w-inline-block"
+                ><img
+                  src="https://img.icons8.com/ios-glyphs/30/null/instagram-new.png"
                   loading="lazy"
                   alt=""
                   class="social-icon"
@@ -176,33 +174,43 @@
                 <a href="tel:+919790871242">9790871242</a>
               </p>
               <p>
-                Madhan - Secretory -
+                Madhan - Secretary -
                 <a href="tel:+917082407236">7082407236</a>
               </p>
             </div>
           </div>
           <div class="contact-right-column">
             <div class="form-block w-form">
+              <iframe
+                style="visibility: hidden"
+                name="transFrame"
+                id="transFrame"></iframe>
+
               <form
+                target="transFrame"
                 id="wf-form-Name"
+                method="post"
                 name="wf-form-Name"
-                data-name="Name"
-                method="get">
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSchibFv8jzjWrYmzNzC-v4WuU_tko9l0IPK4EuAFDS502nGLg/formResponse"
+                data-name="Name">
                 <label for="name">Name</label
                 ><input
-                  id="name"
                   type="text"
-                  class="text-field w-input"
-                  placeholder="Tony Stark" />
+                  class="text-field w-input name"
+                  placeholder="Tony Stark"
+                  id="name"
+                  name="entry.1924160014"
+                  required />
                 <label for="email">Email Address</label
                 ><input
                   type="email"
                   class="text-field w-input"
                   maxlength="256"
-                  name="email"
+                  name="entry.1189854049"
                   data-name="Email"
                   placeholder="tony@gmail.com"
                   id="email"
+                  class="email"
                   required />
                 <label for="phone">Phone Number</label
                 ><input
@@ -210,15 +218,24 @@
                   class="text-field w-input"
                   placeholder="9876543210"
                   id="phone"
+                  name="entry.293065073"
+                  class="phone"
                   required />
                 <label for="college">Name of your College</label
                 ><input
                   id="college"
                   type="text"
+                  name="entry.1977591604"
                   class="text-field w-input"
-                  placeholder="Eg: Chennai Institute of Tehnology" />
+                  placeholder="Eg: Chennai Institute of Tehnology"
+                  required />
                 <label for="year">Year</label>
-                <select class="text-field w-input" id="year" required>
+                <select
+                  class="text-field w-input"
+                  id="year"
+                  class="year"
+                  name="entry.1738493701"
+                  required>
                   <option value="">Select your Year</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -226,36 +243,55 @@
                   <option value="4">4</option>
                 </select>
                 <label for="techevents">Technical Events</label>
-                <select class="text-field w-input" id="techevents">
+                <select
+                  class="text-field w-input"
+                  id="techevents"
+                  name="entry.918788274"
+                  class="techEvents">
                   <option value="">Select Any Events</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="CODERS CHEMISTRY">CODERS CHEMISTRY</option>
+                  <option value="CLEVER BOT">CLEVER BOT</option>
+                  <option value="RHYTHM RIVALRY">RHYTHM RIVALRY</option>
+                  <option value="THE HUNT FOR THE HIDDEN">
+                    THE HUNT FOR THE HIDDEN
+                  </option>
                 </select>
                 <label for="nontechevents">Non Technical Events</label>
-                <select class="text-field w-input" id="nontechevents">
+                <select
+                  name="entry.659467054"
+                  class="text-field w-input"
+                  id="nontechevents"
+                  class="nontechEvents">
                   <option value="">Select Any Events</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="SHUTTER STOP">SHUTTER STOP</option>
+                  <option value="TALENTRON">TALENTRON</option>
+                  <option value="SHIP WRECK">SHIP WRECK</option>
+                  <option value="GULLY CRICKET">GULLY CRICKET</option>
+                  <option value="COMIC QUIZ">COMIC QUIZ</option>
+                  <option value="SQUID GAME">SQUID GAME</option>
+                  <option value="OKAY FINE">OKAY FINE</option>
                 </select>
                 <label for="games">Gaming</label>
-                <select class="text-field w-input" id="games">
+                <select
+                  class="text-field w-input"
+                  name="entry.562741725"
+                  id="games"
+                  class="games">
                   <option value="">Select Any Games</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="STUMBLE GUYS">STUMBLE GUYS</option>
+                  <option value="BGMI">BGMI</option>
+                  <option value="VALORANT">VALORANT</option>
                 </select>
                 <label for="workshop">Workshop</label>
-                <select class="text-field w-input" id="workshop">
+                <select
+                  class="text-field w-input"
+                  id="workshop"
+                  name="entry.1202836902"
+                  class="workshop">
                   <option value="">Select Any Events</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="AUTONOMOUS DRONE">AUTONOMOUS DRONE</option>
+                  <option value="NEXT VISION">NEXT VISION</option>
+                  <option value="GREEN COMPUTING">GREEN COMPUTING</option>
                 </select>
                 <!-- <label for="Message-Field"
 									>How can we help you?</label
@@ -313,7 +349,8 @@
                   type="submit"
                   value="Submit button"
                   data-wait="Please wait..."
-                  class="primary-button margin-top-20px w-button" />
+                  class="primary-button margin-top-20px w-button"
+                  id="formRegister" />
               </form>
               <div class="success-message w-form-done">
                 <div>Thank you! We&#x27;ll get back to you.</div>
@@ -386,7 +423,8 @@
               <a href="./technical.html" class="footer-link">Technical</a
               ><a href="./nontechnical.html" class="footer-link"
                 >Non Technical</a
-              ><a href="./workshop.html" class="footer-link">Workshop</a>
+              >
+              <a href="./workshop.html" class="footer-link">Workshop</a>
               <a href="./gaming.html" class="footer-link">Gaming</a>
             </div>
             <div class="footer-column">
@@ -433,51 +471,55 @@
         </div>
       </div>
     </div>
+    <!-- "https://trojans2023-server.onrender.com/api/data", -->
 
     <script>
-      document.addEventListener("submit", async (e) => {
+      // document.addEventListener("submit", async (e) => {
         e.preventDefault();
-        const email = document.querySelector("#email").value;
-        const name = document.querySelector("#name").value;
-        const year = document.querySelector("#year").value;
-        const college = document.querySelector("#college").value;
-        const phone = document.querySelector("#phone").value;
-        const techevents = document.querySelector("#techevents").value;
-        const nontechevents = document.querySelector("#nontechevents").value;
-        const workshops = document.querySelector("#workshop").value;
-        const games = document.querySelector("#games").value;
+        alert("Registration successful!");
 
-        const response = await fetch(`http://localhost:8080/api/data`, {
-          method: "POST",
-          mode: "cors", // no-cors, *cors, same-origin
-          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-          credentials: "same-origin", // include, *same-origin, omit
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
+        // const response = await fetch(
+        //   "https://trojans2023-server.onrender.com/api/data",
+        //   {
+        //     method: "POST",
+        //     mode: "cors", // no-cors, cors, same-origin
+        //     cache: "no-cache", //default, no-cache, reload, force-cache, only-if-cached
+        //     credentials: "same-origin", // include, *same-origin, omit
+        //     headers: {
+        //       Accept: "application/json",
+        //       "Content-Type": "application/json",
+        //     },
 
-          body: JSON.stringify({
-            email,
-            name,
-            year,
-            college,
-            phone,
-            events: {
-              techType: techevents,
-              nonTechType: nontechevents,
-              gamingType: games,
-              workshopType: workshops,
-            },
-          }), // body data type must match "Content-Type" header
-        });
+        //     body: JSON.stringify({
+        //       email,
+        //       name,
+        //       year,
+        //       college,
+        //       phone,
+        //       events: {
+        //         techType: techevents,
+        //         nonTechType: nontechevents,
+        //         gamingType: games,
+        //         workshopType: workshops,
+        //       },
+        //     }), // body data type must match "Content-Type" header
+        //   }
+        // );
+        // if (response.status == 200) {
+        //
+        // } else {
+        //   alert("Registration failed, Please try again later!");
+        // }
       });
     </script>
+    <script src="../js/javascript1.js"></script>
+
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62380a41f823f569003b985b"
       type="text/javascript"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"></script>
+    <!-- <script src="../js/register.js"></script> -->
     <!-- <script
 			src="https://assets.website-files.com/62380a41f823f569003b985b/js/webflow.1b45998d8.js"
 			type="text/javascript"
@@ -485,5 +527,16 @@
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector("#loadSection").style.visibility = "visible";
+        } else {
+          document.querySelector("#loadSection").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+        }
+      };
+    </script>
   </body>
 </html>
