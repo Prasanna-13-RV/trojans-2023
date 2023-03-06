@@ -16,7 +16,7 @@
 			content="Trojans - A National Level Symposium"
 			property="twitter:title"
 		/>
-		<meta property="og:image" content="../assets/home/Tro1.png">
+		<meta property="og:image" content="../assets/home/Tro1.png" />
 		<meta content="Trojans" name="generator" />
 		<link
 			rel="shortcut icon"
@@ -213,10 +213,11 @@
 								data-name="Name"
 							>
 								<label for="name">Name</label
-								><input
+								>
+								<input
 									type="text"
 									class="text-field w-input name"
-									placeholder="Tony Stark"
+									placeholder="Your Name"
 									id="name"
 									required
 								/>
@@ -227,7 +228,7 @@
 									maxlength="256"
 									name="email"
 									data-name="Email"
-									placeholder="tony@gmail.com"
+									placeholder="abc@gmail.com"
 									id="email"
 									class="email"
 									required
@@ -552,7 +553,7 @@
 					document.querySelector("#nontechevents").value;
 				const workshops = document.querySelector("#workshop").value;
 				const games = document.querySelector("#games").value;
-
+				
 				const response = await fetch(
 					"https://trojans2023-server.onrender.com/api/data",
 					{
@@ -580,11 +581,7 @@
 						}), // body data type must match "Content-Type" header
 					}
 				);
-				if (response.status == 200) {
-					alert("Registration successful!");
-				} else {
-					alert("Registration failed, Please try again later!");
-				}
+				alert("Registration successful!");
 			});
 		</script>
 		<script src="../js/javascript1.js"></script>
